@@ -67,6 +67,14 @@ select {
   font: inherit;
 }
 
+/*Стандартный курсор для кнопок, сброс кнопок*/
+button {
+  cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  outline: none;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
 @media (prefers-reduced-motion: reduce) {
   * {
@@ -78,7 +86,19 @@ select {
 }
 
 @font-face {
-  font-family: 'Raleway Thin';
+  font-family: 'Raleway';
   font-weight: 300;
   src: url("./../assets/fonts/raleway.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 400;
+  src: url("./../assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-weight: 500;
+  src: url("./../assets/fonts/Raleway-Medium.ttf");
 }
